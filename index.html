@@ -3,12 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Salman Systems - Profesyonel teknoloji ve sistem çözümleri">
   <title>Salman Systems</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,70 +12,94 @@
     <div class="container">
       <a href="./" class="logo">Salman Systems</a>
       <nav class="nav">
-        <a href="#anasayfa">Anasayfa</a>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#iletisim">İletişim</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="projeler.html">Projeler</a>
+        <a href="index.html#hakkimizda">Hakkımızda</a>
+        <a href="iletisim.html">İletişim</a>
       </nav>
-      <button class="nav-toggle" aria-label="Menü" type="button">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-toggle" aria-label="Menü" type="button"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <main>
-    <section id="anasayfa" class="hero">
-      <div class="hero-bg"></div>
-      <div class="container">
-        <h1>Salman Systems</h1>
-        <p class="hero-tagline">Teknoloji ve sistem çözümlerinde güvenilir ortağınız</p>
-        <a href="#iletisim" class="btn btn-primary">İletişime Geçin</a>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-line"></span>
+          <h1 class="hero-title">Fikirlerin yazılıma dönüştüğü yer</h1>
+          <p class="hero-sub">Netlik ve odak için sade tasarım.</p>
+          <div class="hero-buttons">
+            <a href="projeler.html" class="btn btn-primary">Projeleri Görüntüle <span class="btn-arrow">→</span></a>
+            <a href="#hakkimizda" class="btn btn-outline">Daha Fazla</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge"><span class="badge-icon">✓</span> Onaylı Ajans</span>
+            <span class="badge"><span class="badge-icon">◇</span> Küresel Erişim</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero.png" alt="Salman Systems" class="hero-image-inner">
+        </div>
       </div>
     </section>
 
-    <section id="hizmetler" class="section services">
+    <section id="hakkimizda" class="section why-section">
       <div class="container">
-        <h2>Hizmetlerimiz</h2>
-        <div class="services-grid">
-          <article class="card">
-            <div class="card-icon">◆</div>
-            <h3>Yazılım Geliştirme</h3>
-            <p>Web ve masaüstü uygulamaları, ölçeklenebilir ve güvenli çözümler.</p>
+        <h2 class="why-title">Neden Salman Systems?</h2>
+        <p class="why-sub">Dijital ürün geliştirmenin her boyutunda mükemmellik sunuyoruz.</p>
+        <div class="cards-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🖥</div>
+            <h3>Duyarlı Tasarım</h3>
+            <p>Mobilden masaüstüne her cihazda mükemmel görünüm.</p>
           </article>
-          <article class="card">
-            <div class="card-icon">◇</div>
-            <h3>Altyapı & Bulut</h3>
-            <p>Sunucu, ağ ve bulut altyapısı kurulumu ve yönetimi.</p>
+          <article class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Önce Mobil</h3>
+            <p>Dokunmatik etkileşimler ve küçük ekranlar için optimize.</p>
           </article>
-          <article class="card">
-            <div class="card-icon">○</div>
-            <h3>Danışmanlık</h3>
-            <p>Teknoloji stratejisi, dijital dönüşüm ve süreç iyileştirme.</p>
+          <article class="feature-card">
+            <div class="feature-icon">☁</div>
+            <h3>Bulut Yerel</h3>
+            <p>Modern bulut altyapısıyla ölçeklenebilir yapı.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🛡</div>
+            <h3>Kurumsal Güvenlik</h3>
+            <p>Banka düzeyinde şifreleme ve güvenlik standartları.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">&lt;/&gt;</div>
+            <h3>Temiz Kod</h3>
+            <p>Bakımı kolay, dokümante ve verimli kod tabanı.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Yıldırım Hızı</h3>
+            <p>Hız ve performans için optimize edilmiş çözümler.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="hakkimizda" class="section about">
+    <section class="references-strip">
       <div class="container">
-        <h2>Hakkımızda</h2>
-        <p class="about-text">Salman Systems olarak, işletmelerin dijital dönüşümünde güvenilir bir iş ortağıyız. Deneyimli ekibimizle yazılım, altyapı ve danışmanlık hizmetleri sunuyoruz.</p>
-      </div>
-    </section>
-
-    <section id="iletisim" class="section contact">
-      <div class="container">
-        <h2>İletişim</h2>
-        <div class="contact-box">
-          <p><strong>E-posta:</strong> <a href="mailto:info@salmansystems.com">info@salmansystems.com</a></p>
-          <p><strong>Telefon:</strong> <a href="tel:+902121234567">+90 212 123 45 67</a></p>
-          <p>Domain aldıktan sonra bu bilgileri kendi iletişim bilgilerinizle güncelleyebilirsiniz.</p>
+        <h2 class="references-title">Referanslarımız</h2>
+        <div class="references-logos">
+          <a href="https://www.cengizbalikcilik.com.tr/" target="_blank" rel="noopener" class="ref-item">
+            <img src="https://www.cengizbalikcilik.com.tr/idea/ca/68/themes/selftpl_6340aa22157ea/assets/uploads/logo.png" alt="Cengiz Balıkçılık" class="ref-logo">
+            <span class="ref-name">Cengiz Balıkçılık</span>
+          </a>
+          <a href="https://www.atolyetukan.com.tr/" target="_blank" rel="noopener" class="ref-item">
+            <img src="images/atolye-tukan-logo.png" alt="Atölye Tukan" class="ref-logo ref-logo-atolye">
+            <span class="ref-name">Atölye Tukan</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer id="iletisim" class="footer">
     <div class="container">
       <p>&copy; <span id="year"></span> Salman Systems. Tüm hakları saklıdır.</p>
     </div>
